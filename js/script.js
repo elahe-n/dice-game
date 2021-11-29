@@ -16,3 +16,13 @@ console.log(getRandomDiceRoll())
 // 3) Use `diceRoll` to update the label "You rolled: #" (replacing # with the roll)
 
 // 4) Wrap the dice roll procedure in a function named rollTheDice(), call it from the console to test
+
+ const rollTheDice=function () {
+  let diceRoll=getRandomDiceRoll();
+  document.querySelector(".pic").setAttribute("src",`./img/dice${diceRoll}.svg`)
+  var a = ['one','two','three','four', 'five','six']
+  document.querySelector("#number").textContent=a[diceRoll-1]
+ }
+
+ document.querySelector(".pic").addEventListener(`click`,rollTheDice)
+ 
