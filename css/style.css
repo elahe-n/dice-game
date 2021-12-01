@@ -6,17 +6,30 @@ body{
     margin-top: 30px;
 }
 
-h2{
-    display:inline;
-    position: relative;
-    left:50%;
-}
 
 .pic{
-    height: 200px;
-    position: fixed;
-    left:50%;
-    margin-top:30px;
+    height: 100px;
+    width: 100px;
+    margin:30px auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: aqua;
+    display: inline;
+}
+
+.btn{
+    display:inline;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.pics{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap:1em;
 }
